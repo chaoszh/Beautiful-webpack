@@ -29,15 +29,15 @@ config = {
             in: './app/object/student.js',
             out: './student'
         },
-        //recursive
+        //combination
         say:{
-            mode: 'recursive',
+            mode: 'combination',
             in: './app/component/**.js',
             out: './component/say'
         },
         //default output
         lib:{
-            mode: 'recursive',
+            mode: 'combination',
             in: './app/lib/**.js'
         }
     },

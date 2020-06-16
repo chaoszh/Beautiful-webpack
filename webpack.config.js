@@ -20,7 +20,7 @@ module.exports = {
             template: './app/index.html',
             chunks: 'all'
         }),
-        new BundleAnalyzerPlugin()
+        // new BundleAnalyzerPlugin()
     ],
     devServer: {
         contentBase: './dist',

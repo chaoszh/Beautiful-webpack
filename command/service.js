@@ -3,7 +3,7 @@ const path = require('path')
 const fs = require('fs')
 const log = require('../lib/console-log')
 const myexec = require('../lib/myexec')
-const makeup = require('../lib/make-up-config').makeup
+const process = require('process')
 
 var init = async function(config_path){
     // 开始运行
@@ -33,13 +33,20 @@ var init = async function(config_path){
 }
 
 var build = async function(config_path){
-    let config = require(config_path)
-    // console.log('config', config)
-    // console.log(await myexec(`webpack --config ${config_path}`))
+    config_path = path.relative(path.resolve(), config_path)
+    log.info("b-webpack start building.")
+    console.log(await myexec(`npx webpack --mode production --config ${config_path}`))
+    log.info("b-webpack succeed.")
 }
 
 var run = async function(config_path){
-    // console.log(await myexec(`webpack --config ${config_path}`))
+    process.on('SIGINT', function () {
+        log.info("bye!")
+        process.exit();
+    });
+    config_path = path.relative(path.resolve(), config_path)
+    log.info("b-webpack start running.")
+    console.log(await myexec(`npx webpack-dev-server --config ${config_path}`))
 }
 
 module.exports = {
