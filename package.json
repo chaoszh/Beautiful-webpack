@@ -1,0 +1,32 @@
+{
+  "name": "beautiful-webpack",
+  "version": "1.0.0",
+  "description": "A npm moduel intended to simplify your code struture.",
+  "main": "hello.js",
+  "scripts": {
+    "build": "webpack",
+    "server": "webpack-dev-server",
+    "test": "webpack --config beautiful-webpack.config.js"
+  },
+  "bin": {
+    "b-webpack": "./bin/b-webpack.js"
+  },
+  "author": "chaoszh",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "commander": "^4.0.1",
+    "download-git-repo": "^3.0.2",
+    "glob": "^7.1.6",
+    "inquirer": "^7.0.1",
+    "ora": "^4.0.3",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^4.3.0",
+    "jquery": "^3.5.1",
+    "webpack": "^4.43.0",
+    "webpack-bundle-analyzer": "^3.8.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
