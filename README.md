@@ -1,4 +1,4 @@
-# <img src="./readme/logo.png" style="height: 45px"/>
+# <img src="./readme/logo.png" style="height: 30px"/>
 
  ![Me](https://img.shields.io/badge/author-chaoszh-15b6e8?style=flat-square)
  [![GitHub license](https://img.shields.io/github/license/File-New-Project/EarTrumpet?style=flat-square)]() ![Maintenance status](https://img.shields.io/maintenance/yes/2020?style=flat-square)
@@ -12,7 +12,9 @@
 
 ## 🔨Install
 
-`npm i beautiful-webpack --save-dev`
+```
+npm i beautiful-webpack --save-dev
+```
 
 ## 📕Documentation
 
@@ -22,7 +24,9 @@
 
 安装beautiful-webpack后，首先进行初始化，执行命令
 
-`npx b-webpack init`
+```
+npx b-webpack init
+```
 
 根目录将出现beautiful-webpack的默认配置文件，可以按照下面[配置文件说明](###configuration)对它进行配置。
 
@@ -30,13 +34,17 @@
 
 Beautiful-webpack的打包可以通过命令行执行，使用如下命令
 
-`npx b-webpack build`
+```
+npx b-webpack build
+```
 
 将通过beautiful-webpack的配置文件对webpack的打包进行处理，产出最终的静态代码。
 
 或者也可以直接使用webpack进行打包。只需要将config改为beautiful-webpack的配置文件路径即可，示例命令如下
 
-`npx webpack --config [config]`
+```
+npx webpack --config [config]
+```
 
 ### 📃configuration
 
