@@ -1,6 +1,6 @@
 {
   "name": "beautiful-webpack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A npm moduel intended to simplify your code struture.",
   "main": "hello.js",
   "scripts": {

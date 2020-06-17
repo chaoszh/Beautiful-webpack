@@ -1,7 +1,9 @@
-# <img src="./readme/logo.png" style="height: 30px"/>
+# Beautiful-webpack
 
  ![Me](https://img.shields.io/badge/author-chaoszh-15b6e8?style=flat-square)
- [![GitHub license](https://img.shields.io/github/license/File-New-Project/EarTrumpet?style=flat-square)]() ![Maintenance status](https://img.shields.io/maintenance/yes/2020?style=flat-square)
+ [![Npm repo](https://img.shields.io/badge/npm-beautiful%20webpack-darkdreen?style=flat-square)](https://www.npmjs.com/package/beautiful-webpack)
+ [![GitHub license](https://img.shields.io/github/license/Fe-New-Project/EarTrumpet?style=flat-square)]()
+ ![Maintenance status](https://img.shields.io/maintenance/yes/2020?style=flat-square)
 
 
 ## 🍊Features
@@ -28,7 +30,7 @@ npm i beautiful-webpack --save-dev
 npx b-webpack init
 ```
 
-根目录将出现beautiful-webpack的默认配置文件，可以按照下面[配置文件说明](###configuration)对它进行配置。
+根目录将出现beautiful-webpack的默认配置文件，可以按照下面[配置文件说明](#configuration)对它进行配置。
 
 #### beautiful-webpack打包
 

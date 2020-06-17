@@ -1,5 +1,5 @@
-const makeup = require('./lib/make-up-config')
-// const makeup = require('beautiful-webpack/lib/make-up-config')
+// const makeup = require('./lib/make-up-config')
+const makeup = require('beautiful-webpack/lib/make-up-config')
 
 config = {
     /**
